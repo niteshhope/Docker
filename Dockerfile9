@@ -1,0 +1,11 @@
+FROM nginx:alpine
+
+ENV webfile /usr/share/nginx/html/test.html
+ 
+RUN \
+ echo "Nitesh" >> $webfile && \
+ echo "kumar" >> $webfile && \
+ echo "Sinha" >> $webfile 
+
+
+
