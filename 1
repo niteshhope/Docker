@@ -1,0 +1,7 @@
+FROM debian 
+
+RUN  apt install -y httpd 
+
+RUN echo "Install apache server over Debian operating System" > /var/www/html/index.html
+
+CMD apachectl -DFOREGROUND
