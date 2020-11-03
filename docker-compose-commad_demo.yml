@@ -1,0 +1,6 @@
+version: '3'
+services:
+  web1:
+    image: centos/python-27-centos7 
+    container_name: centos
+    command: python -m SimpleHTTPServer

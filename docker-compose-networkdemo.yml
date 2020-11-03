@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    image: centos 
+    container_name: container1
+    networks:
+      - test_net
+    tty: true       
+  db:
+    image: centos 
+    container_name: container2
+    networks:
+      - test_net
+    tty: true       
+networks:
+  test_net: 
+
+

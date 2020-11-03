@@ -1,0 +1,9 @@
+version: '3'
+services: 
+  db:
+    image: mysql:5.7
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    env_file: env_file.txt
+    
